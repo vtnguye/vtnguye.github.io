@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vy Nguyen</title>
+    <link href="https://fonts.googleapis.com/css?family=VT323" rel="stylesheet" />
+    <link rel="stylesheet" href="css/master.css">
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.3.1/dist/jquery.min.js"></script> <!-- 3.3.1 -->
+    <script src="https://cdn.jsdelivr.net/gh/mntn-dev/t.js/t.min.js"></script>
+    <script type="text/javascript"></script>
+    <style type="text/css">
+    </style>
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js" type="text/javascript"></script>
+    <script src="js/t.min.js"></script>
+</head>
+
+<body>
+    <nav>
+        <ul>
+            <li><a href="index.html">About</a></li>
+            <li><a href="projects.html">Projects</a></li>
+            <li><a href="contacts.html">Contacts</a></li>
+        </ul>
+    </nav>
+    <!-- About section -->
+    <div id="about" class="section">
+        <div class="container">
+            <pre id="ticker">
+            </pre>
+            <pre id="type">
+<kbd>Mobile: 419-280-3821</kbd>
+<kbd>Email: vtnguye@bgsu.edu</kbd>
+<kbd>LinkedIn: https://www.linkedin.com/in/vtnguye/</kbd>
+
+</pre>
+        </div>
+    </div>
+    <script>
+        var tickr = [
+            "Searching for Vy Nguyen...", "Contacting..."
+        ];
+
+        $('#ticker').t(
+            tickr.join(x = '<ins>1</ins><del>*</del>') + x +'<ins class="dir"><strong>Contact Information:</strong></ins>',
+            { speed: 10, repeat: false, blink_perm:false,caret:false,
+                fin:function(){
+                $('#ticker').t_off([true])
+            } }
+        );
+        console.log(tickr.join(x = '<ins>2</ins><del>*</del>') + x)
+        $('#type').t({
+            speed:10,
+            delay:4,
+            mistype: 0,
+            caret:false
+        });
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,80 @@
+body {
+    background-color: #101010;
+    color: white;
+    font-family: a, monospace;
+    font-weight: lighter;
+    margin: 0;
+    word-wrap: break-word;
+}
+nav {
+    background-color: #000000;
+    position: fixed;
+    width: 100%;
+}
+
+nav ul {
+    padding: 0;
+    margin: 0;
+    text-align: right;
+}
+
+nav li {
+    display: inline;
+    float: left;
+}
+
+nav a {
+    display: inline-block;
+    width: 10em;
+    font-size: 2vmin;
+    font-weight: 400;
+    text-align: center;
+    text-decoration: none;
+    padding: 20px 0;
+    color: #FFFFFF;
+    transition: 1s;
+}
+.container{
+    max-width: 100vw;
+}
+nav a:hover {
+    color: hotpink;
+}
+
+nav a#toggle-btn {
+    display: none;
+}
+
+/* ABOUT SECTION */
+#about{
+    padding-top: 6vh;
+    margin:0
+}
+pre{
+    font-size: 2vw;
+}
+
+.t-caret {
+    font-size: inherit;
+    color: magenta;
+}
+
+#intro{
+    font-size:5vw;
+}
+
+.dir {
+    color: green;
+}
+
+ins,del {
+    text-decoration: none;
+}
+
+kbd {
+    font-size: 1em
+}
+a{
+    color: white
+}
+/* https://gist.github.com/bartholomej/8415655 */
