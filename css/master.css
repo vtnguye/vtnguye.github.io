@@ -1,13 +1,15 @@
+html *{
+    font-family: 'VT323';
+}
 body {
-    background-color: #101010;
+    background-color: #000000;
     color: white;
-    font-family: a, monospace;
     font-weight: lighter;
     margin: 0;
     word-wrap: break-word;
 }
 nav {
-    background-color: #000000;
+    background-color: #3a3a3a;
     position: fixed;
     width: 100%;
 }
@@ -64,7 +66,7 @@ pre{
 }
 
 .dir {
-    color: green;
+    color: #33ff00;
 }
 
 ins,del {
